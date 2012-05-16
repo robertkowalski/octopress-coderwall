@@ -1,3 +1,5 @@
+[![endorse](http://api.coderwall.com/robertkowalski/endorse.png)](http://coderwall.com/robertkowalski)
+
 Coderwall for Octopress
 =======================
 
@@ -7,9 +9,6 @@ Adds your coderwall.com badges to the octopress sidebar
  * badges linking to the coderwall profile
  * uses the in octopress available ender.js (bonzo / qwery)
 
-[![endorse](http://api.coderwall.com/robertkowalski/endorse.png)](http://coderwall.com/robertkowalski)
-
-![Sidebar](https://github.com/robertkowalski/octopress-coderwall/blob/master/sidebar.png?raw=true)
 
 Installation
 ------------
@@ -29,6 +28,8 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 ```
 coderwall_user: YOUR_USERNAME
 ```
+
+![Sidebar](https://github.com/robertkowalski/octopress-coderwall/blob/master/sidebar.png?raw=true)
 
 ---------------------------------------
 

@@ -29,7 +29,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 coderwall_user: YOUR_USERNAME
 ```
 
-![Sidebar](https://github.com/robertkowalski/octopress-coderwall/blob/assets/sidebar.png?raw=true)
+![Sidebar](http://robertkowalski.github.com/octopress-coderwall/sidebar.png)
 
 ---------------------------------------
 

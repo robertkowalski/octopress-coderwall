@@ -8,12 +8,13 @@ Adds your coderwall.com badges to the octopress sidebar
  * triggered by entering a username for coderwall in _config.yml
  * badges linking to the coderwall profile
  * uses the in octopress available ender.js (bonzo / qwery)
+ * or the new jQuery (since Octopress 2.1)
 
 
 Installation
 ------------
 
- - Copy the files to your octopress rootfolder
+ - Copy the files to your octopress rootfolder (don't forget the hidden files)
 
  - Add ```asides/coderwall.html``` to the ```default_asides``` or ```default_asides``` ```post_asides``` or ```page_asides``` in the ```_config.yml```
 
@@ -23,7 +24,7 @@ Example:
 default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html, asides/coderwall.html]
 ```
 
- - Additionally, add to the ```_config.yml```:
+ - Additionally, add to your ```_config.yml```:
 
 ```
 coderwall_user: YOUR_USERNAME
@@ -34,7 +35,7 @@ coderwall_user: YOUR_USERNAME
 ---------------------------------------
 
 
-License 
+License
 -------
 
 Copyright (c) 2012, Robert Kowalski

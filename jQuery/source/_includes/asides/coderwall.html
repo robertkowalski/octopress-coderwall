@@ -53,5 +53,13 @@
       box-shadow: none !important;
     }
   </style>
+
+  {% if site.coderwall_endorse %}
+  <div>
+    <a href="http://coderwall.com/{{site.coderwall_user}}"><img
+       alt="Endorse {{site.coderwall_user}} on Coderwall"
+       src="http://api.coderwall.com/{{site.coderwall_user}}/endorsecount.png" /></a>
+  </div>
+  {% endif %}
 </section>
 {% endif %}

@@ -3,7 +3,7 @@
 Coderwall for Octopress
 =======================
 
-Adds your coderwall.com badges to the octopress sidebar
+Adds your coderwall.com badges and endrose button to the octopress sidebar
 
  * triggered by entering a username for coderwall in _config.yml
  * badges linking to the coderwall profile
@@ -14,7 +14,7 @@ Adds your coderwall.com badges to the octopress sidebar
 Installation
 ------------
 
- - Copy the files to your octopress rootfolder (don't forget the hidden files)
+ - Copy the files to your octopress source folder
 
  - Add ```asides/coderwall.html``` to the ```default_asides``` or ```default_asides``` ```post_asides``` or ```page_asides``` in the ```_config.yml```
 
@@ -27,8 +27,23 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
  - Additionally, add to your ```_config.yml```:
 
 ```
-coderwall_user: YOUR_USERNAME
+# Coderwall
+coderwall_user: YOUR_USRNAME
+coderwall_endorse: True
 ```
+
+Do include the css nicely in the page add this code to the file /sass/custom/_styles.scss
+```
+aside.sidebar .cw-badge img {
+  padding: 5px;
+  border: 0 none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+}
+```
+
 
 ![Sidebar](http://robertkowalski.github.com/octopress-coderwall/sidebar.png)
 
@@ -39,6 +54,7 @@ License
 -------
 
 Copyright (c) 2012, Robert Kowalski
+Copyright (c) 2013, Tim Kleinschmidt
 
 All rights reserved.
 

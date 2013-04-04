@@ -4,6 +4,13 @@
   <ul id="cw_badges">
     <li class="loading">Status updating...</li>
   </ul>
+  {% if site.coderwall_endorse %}
+  <div>
+    <a href="http://coderwall.com/{{site.coderwall_user}}" target="_blank"><img
+       alt="Endorse {{site.coderwall_user}} on Coderwall"
+       src="http://api.coderwall.com/{{site.coderwall_user}}/endorsecount.png" /></a>
+  </div>
+  {% endif %}
 
   <script type="text/javascript">
     var coderwall = (function(){
@@ -15,7 +22,7 @@
             index;
 
         for (index in badges) {
-          fragment += '<a class="cw_badge"title="' + badges[index].description + '" href="http://coderwall.com/' + options.user + '">';
+          fragment += '<a class="cw_badge"title="' + badges[index].description + '" target="_blank" href="http://coderwall.com/' + options.user + '">';
           fragment +=   '<img alt="' + badges[index].description + '" height="' + width + '" width="' + height + '" src="' + badges[index].badge + '"/>';
           fragment += '</a>';
         }
@@ -57,15 +64,5 @@
       });
     });
   </script>
-  <style type="text/css">
-    .cw_badge img {
-      padding: 5px;
-      border: 0 none !important;
-      -moz-box-shadow: none !important;
-      -webkit-box-shadow: none !important;
-      -o-box-shadow: none !important;
-      box-shadow: none !important;
-    }
-  </style>
 </section>
 {% endif %}

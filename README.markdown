@@ -9,7 +9,7 @@ Coderwall for Octopress
 Adds your coderwall.com badges and endrose button to the octopress sidebar
 
  * triggered by entering a username for coderwall in _config.yml
- * 2 endrose logos with and without count
+ * 2 endorse logos with and without count
  * badges linking to the coderwall profile
  * uses the in octopress available ender.js (bonzo / qwery)
  * or the new jQuery (since Octopress 2.1)

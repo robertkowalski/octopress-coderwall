@@ -18,14 +18,16 @@ Adds your coderwall.com badges and endrose button to the octopress sidebar
 Installation
 ------------
 
- - Copy the files to your octopress source folder
+ - Copy the file to your octopress source folder
+     - Fresh Instance ```.themes/classic/source/_includes/custom/asides/```
+     - Existing Instance ```source/_includes/custom/asides/```
 
- - Add ```asides/coderwall.html``` to the ```default_asides``` or ```default_asides``` ```post_asides``` or ```page_asides``` in the ```_config.yml```
+ - Add ```custom/asides/coderwall.html``` to the ```default_asides``` or ```post_asides```, ```blog_index_asides``` or ```page_asides``` in the ```_config.yml```
 
 Example:
 
 ```
-default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html, asides/coderwall.html]
+default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html, custom/asides/coderwall.html]
 ```
 
  - Additionally, add to your ```_config.yml```:
@@ -37,16 +39,16 @@ coderwall_endorse: True
 coderwall_endrosecount: True
 ```
 
- - Do include the css nicely in the page add this code to the file ```/sass/custom/_styles.scss```:
+ - To remove the default behaviour of sidebar images include the css in ```/sass/custom/_styles.scss```:
 
 ```
 aside.sidebar .cw_badge img {
   padding: 5px;
-  border: 0 none !important;
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -o-box-shadow: none !important;
-  box-shadow: none !important;
+  border: 0 none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;the w
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 ```
 

@@ -1,5 +1,7 @@
 [![endorse](http://api.coderwall.com/Azd325/endorse.png)](http://coderwall.com/Azd325) Azd325
 
+[![endorse](http://api.coderwall.com/Azd325/endorse.png)](http://coderwall.com/kaineer) kaineer
+
 [![endorse](http://api.coderwall.com/robertkowalski/endorse.png)](http://coderwall.com/robertkowalski) robertkowalski
 
 
@@ -61,7 +63,7 @@ aside.sidebar .cw_badge img {
 License
 -------
 
-Copyright (c) 2012, Robert Kowalski
+Copyright (c) 2012, Robert Kowalski, Tangerine Cat
 
 Copyright (c) 2013, Tim Kleinschmidt
 

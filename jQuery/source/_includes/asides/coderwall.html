@@ -1,14 +1,16 @@
 {% if site.coderwall_user %}
 <section>
   <h1>Coderwall</h1>
-  <ul id="cw-badges">
+  <ul id="cw_badges">
     <li class="loading">Status updating...</li>
   </ul>
   {% if site.coderwall_endorse %}
   <div>
-    <a href="http://coderwall.com/{{site.coderwall_user}}" target="_blank"><img
+    <a href="http://coderwall.com/{{site.coderwall_user}}" target="_blank" class="cw_badge">{% if site.coderwall_endrosecount %}<img
        alt="Endorse {{site.coderwall_user}} on Coderwall"
-       src="http://api.coderwall.com/{{site.coderwall_user}}/endorsecount.png" /></a>
+       src="http://api.coderwall.com/{{site.coderwall_user}}/endorsecount.png" />{%else%}<img
+       alt="Endorse {{site.coderwall_user}} on Coderwall"
+       src="http://api.coderwall.com/{{site.coderwall_user}}/endorse.png" />{% endif %}</a>
   </div>
   {% endif %}
 
@@ -22,7 +24,7 @@
             index;
 
         for (index in badges) {
-          fragment += '<a class="cw-badge"title="' + badges[index].description + '" target="_blank" href="http://coderwall.com/' + options.user + '">';
+          fragment += '<a class="cw_badge"title="' + badges[index].description + '" target="_blank" href="http://coderwall.com/' + options.user + '">';
           fragment +=   '<img alt="' + badges[index].description + '" height="' + width + '" width="' + height + '" src="' + badges[index].badge + '"/>';
           fragment += '</a>';
         }

@@ -6,9 +6,11 @@
   </ul>
   {% if site.coderwall_endorse %}
   <div>
-    <a href="http://coderwall.com/{{site.coderwall_user}}" target="_blank"><img
+    <a href="http://coderwall.com/{{site.coderwall_user}}" target="_blank" class="cw_badge">{% if site.coderwall_endrosecount %}<img
        alt="Endorse {{site.coderwall_user}} on Coderwall"
-       src="http://api.coderwall.com/{{site.coderwall_user}}/endorsecount.png" /></a>
+       src="http://api.coderwall.com/{{site.coderwall_user}}/endorsecount.png" />{%else%}<img
+       alt="Endorse {{site.coderwall_user}} on Coderwall"
+       src="http://api.coderwall.com/{{site.coderwall_user}}/endorse.png" />{% endif %}</a>
   </div>
   {% endif %}
 

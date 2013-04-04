@@ -33,12 +33,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 # Coderwall
 coderwall_user: YOUR_USRNAME
 coderwall_endorse: True
+coderwall_endrosecount: True
 ```
 
  - Do include the css nicely in the page add this code to the file ```/sass/custom/_styles.scss```:
 
 ```
-aside.sidebar .cw-badge img {
+aside.sidebar .cw_badge img {
   padding: 5px;
   border: 0 none !important;
   -moz-box-shadow: none !important;

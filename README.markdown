@@ -1,4 +1,7 @@
-[![endorse](http://api.coderwall.com/robertkowalski/endorse.png)](http://coderwall.com/robertkowalski)
+[![endorse](http://api.coderwall.com/Azd325/endorse.png)](http://coderwall.com/Azd325) Azd325
+
+[![endorse](http://api.coderwall.com/robertkowalski/endorse.png)](http://coderwall.com/robertkowalski) robertkowalski
+
 
 Coderwall for Octopress
 =======================
@@ -32,7 +35,8 @@ coderwall_user: YOUR_USRNAME
 coderwall_endorse: True
 ```
 
-Do include the css nicely in the page add this code to the file /sass/custom/_styles.scss
+ - Do include the css nicely in the page add this code to the file ```/sass/custom/_styles.scss```:
+
 ```
 aside.sidebar .cw-badge img {
   padding: 5px;
@@ -54,6 +58,7 @@ License
 -------
 
 Copyright (c) 2012, Robert Kowalski
+
 Copyright (c) 2013, Tim Kleinschmidt
 
 All rights reserved.

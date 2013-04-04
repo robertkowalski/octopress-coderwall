@@ -8,7 +8,7 @@
 Coderwall for Octopress
 =======================
 
-Adds your coderwall.com badges and endrose button to the octopress sidebar
+Adds your coderwall.com badges and endorse button to the octopress sidebar
 
  * triggered by entering a username for coderwall in _config.yml
  * 2 endorse logos with and without count
@@ -48,7 +48,7 @@ aside.sidebar .cw_badge img {
   padding: 5px;
   border: 0 none;
   -moz-box-shadow: none;
-  -webkit-box-shadow: none;the w
+  -webkit-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
 }
